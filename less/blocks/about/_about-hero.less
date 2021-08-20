@@ -1,0 +1,90 @@
+.about__hero {
+    position: relative;
+    padding-top: 260px;
+    padding-bottom: 260px;
+    background-image: url('../img/about-hero/about-hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(2, 111, 166, 0.3);    
+        
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -214px;
+        background-image: url(../img/about-hero/about-hero-after.png);
+        background-repeat: no-repeat;
+        width: 362px;
+        height: 606px;
+        z-index: 1;
+
+        @media (max-width: 1280px) {
+            content: none;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    @media (max-width: 650px) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    @media (max-width: 650px) {
+        padding-top: 123px;
+        padding-bottom: 123px;
+    }
+
+    @media (max-width: 450px) {
+        background-image: url('../img/about-hero/about-hero-bg2.png');
+    }
+}
+
+.about__hero-title {
+    position: relative;
+    z-index: 1;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    span {
+        color: #58BE6A;
+    }
+
+    @media (max-width: 1000px) {
+        font-size: 45px;
+        line-height: 100%;
+    }
+
+    @media (max-width: 815px) {
+        font-size: 35px;
+        line-height: 100%;
+    }
+
+    @media (max-width: 665px) {
+        font-size: 25px;
+        line-height: 100%;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 22px;
+        line-height: 27px;
+    }
+}

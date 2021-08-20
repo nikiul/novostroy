@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/assets/owl.theme.default.min.css">
+    <title>Главная</title>
+</head>
+<body>
+   
+    <div class="wrapper">
+
+        <header class="header">
+
+            <div class="container">
+
+                <div class="header__content">
+
+                    <div class="header__left">
+
+                        <a href="main.html" class="header__logo">
+
+                            <img src="img/base/logo.png" alt="">
+
+                        </a>
+
+                        <ul class="header-nav__list">
+
+                            <li class="header-list__item">
+
+                                <a href="#">все ЖК</a>
+
+                            </li>
+
+                            <li class="header-list__item">
+
+                                <a href="#">Районы</a>
+
+                            </li>
+
+                            <li class="header-list__item">
+
+                                <a href="#">О компании</a>
+
+                            </li>
+
+                            <li class="header-list__item">
+
+                                <a href="#">Контакты</a>
+
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="header__right">
+
+                        <img src="img/base/phone-icon.svg" alt="">
+
+                        <a href="tel:88000000000">8 800 00 00 000</a>
+
+                    </div>
+
+                    <img src="img/header/mobile-nav-open-btn.svg" alt="" class="mobile-nav__open-btn mobile-nav__open-btn-header">
+
+                    <div class="mobile__nav-wrap ">
+
+                        <div class="mobile__nav">
+
+                            <img src="img/header/mobile-nav-close-btn.svg" alt="" class="mobile-nav__close-btn">
+
+                            <p class="mobile__nav-title">Навигация по сайту</p>
+
+                            <ul class="header-nav__list mobile__nav-list">
+
+                                <li class="header-list__item">
+
+                                    <a href="#">все ЖК</a>
+    
+                                </li>
+    
+                                <li class="header-list__item">
+    
+                                    <a href="#">Районы</a>
+    
+                                </li>
+    
+                                <li class="header-list__item">
+    
+                                    <a href="#">О компании</a>
+    
+                                </li>
+    
+                                <li class="header-list__item">
+    
+                                    <a href="#">Контакты</a>
+    
+                                </li>
+
+                            </ul>
+
+                            <div class="header__right mobile-nav__tel">
+
+                                <img src="img/base/phone-icon.svg" alt="">
+        
+                                <a href="tel:88000000000">8 800 00 00 000</a>
+        
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="main__hero">
+
+                <div class="container">
+
+                    <img class="main__hero-img" src="img/main-hero/main-hero-before.png" alt="">
+
+                    <div class="main__hero-content">
+
+                        <div class="main__hero-top">
+
+                            <h1 class="main__hero-title">Квартиры в <br> Краснодаре <br> <span>от 1 333 000₽ *</span></h1>
+
+                            <div class="btn btn__main-hero">Подобрать квартиру</div>
+
+                        </div>
+
+                        <a href="#all" class="main__hero-bottom">
+
+                            <span>смотреть все жк</span>
+
+                            <img src="img/main-hero/main-hero-arrow.svg" alt="">
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hot hot-main">
+
+                <div class="container">
+
+                    <div class="hot__content">
+
+                        <h2 class="title hot__title">Самые горячие предложения <br> на рынке недвижимости</h2>
+
+                        <div class="hot__items-wrap owl-carousel owl-theme" id="hot__items-wrap-main">
+
+                            <div class="hot__item">
+
+                                <div class="hot__item-img">
+
+                                    <img src="img/hot/hot-item-img1.png" alt="">
+
+                                </div>
+
+                                <div class="hot__item-text">
+
+                                    <p>Скидка в августе <br> до 160 000</p>
+
+                                    <div class="btn btn--small btn__main-hot">Подробнее</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="hot__item">
+
+                                <div class="hot__item-img">
+
+                                    <img src="img/hot/hot-item-img2.png" alt="">
+                                    
+                                </div>
+
+                                <div class="hot__item-text">
+
+                                    <p class="">Пройди опрос и <br> получи сертификат <br> на покупку мебели</p>
+
+                                    <div class="btn btn--small">Пройти опрос</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="all" id="all">
+
+                <div class="container">
+
+                    <div class="all__content">
+
+                        <h2 class="title all__title">Все ЖК</h2>
+
+                        <div class="all__items-wrap">
+
+                            <a href="#" class="all__item">
+
+                                <img class="all__item-img" src="img/main-all/main-all-item1.png" alt="">
+
+                                <div class="all__item-badge">хит продаж</div>
+
+                                <div class="all__item-bottom">
+
+                                    <p class="all__item-title">Парк <br> победы</p>
+
+                                    <p class="all__item-desc">ул. Героя Пешкова, 14</p>
+
+                                    <p class="all__item-price">от 1 230 000 ₽</p>
+
+                                </div>                        
+
+                            </a>
+
+                            <a href="#" class="all__item">
+
+                                <img class="all__item-img" src="img/main-all/main-all-item2.png" alt="">
+
+                                <p class="all__item-badge">скоро сдача</p>
+
+                                <div class="all__item-bottom">
+
+                                    <p class="all__item-title">самолёт</p>
+
+                                    <p class="all__item-desc">ул. Западный обход</p>
+
+                                    <p class="all__item-price">от 1 230 000 ₽</p>
+
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="all__item">
+
+                                <img class="all__item-img" src="img/main-all/main-all-item3.png" alt="">
+
+                                <p class="all__item-badge">хит продаж</p>
+
+                                <div class="all__item-bottom">
+
+                                    <p class="all__item-title">новелла</p>
+
+                                    <p class="all__item-desc">ул. Питерская, д. 40, литера 4</p>
+
+                                    <p class="all__item-price">от 1 230 000 ₽</p>
+
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="all__item">
+
+                                <img class="all__item-img" src="img/main-all/main-all-item4.png" alt="">
+
+                                <p class="all__item-badge">хит продаж</p>
+
+                                <div class="all__item-bottom">
+
+                                    <p class="all__item-title">светлоград</p>
+
+                                    <p class="all__item-desc">ул. Красных Партизан, 1/3к1</p>
+
+                                    <p class="all__item-price">от 1 230 000 ₽</p>
+
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="all__item">
+
+                                <img class="all__item-img" src="img/main-all/main-all-item5.png" alt="">
+
+                                <p class="all__item-badge">хит продаж</p>
+
+                                <div class="all__item-bottom">
+
+                                    <p class="all__item-title">грани</p>
+
+                                    <p class="all__item-desc">ул. Западный обход, д. 45, литера 5.</p>
+
+                                    <p class="all__item-price">от 1 230 000 ₽</p>
+
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="all__item">
+
+                                <img class="all__item-img" src="img/main-all/main-all-item6.png" alt="">
+
+                                <p class="all__item-badge">хит продаж</p>
+
+                                <div class="all__item-bottom">
+
+                                    <p class="all__item-title">дарстрой</p>
+
+                                    <p class="all__item-desc">ул. Красных Партизан, д. 117</p>
+
+                                    <p class="all__item-price">от 1 230 000 ₽</p>
+
+                                </div>
+
+                            </a>
+
+                            <div class="all__accordeon">
+
+                                <div class="all__items-wrap all__items-wrap--hidden">
+
+                                    <a href="#" class="all__item">
+
+                                        <img class="all__item-img" src="img/main-all/main-all-item1.png" alt="">
+        
+                                        <div class="all__item-badge">хит продаж</div>
+        
+                                        <div class="all__item-bottom">
+        
+                                            <p class="all__item-title">Парк <br> победы</p>
+        
+                                            <p class="all__item-desc">ул. Героя Пешкова, 14</p>
+        
+                                            <p class="all__item-price">от 1 230 000 ₽</p>
+        
+                                        </div>                        
+        
+                                    </a>
+        
+                                    <a href="#" class="all__item">
+
+                                        <img class="all__item-img" src="img/main-all/main-all-item2.png" alt="">
+        
+                                        <p class="all__item-badge">скоро сдача</p>
+        
+                                        <div class="all__item-bottom">
+        
+                                            <p class="all__item-title">самолёт</p>
+        
+                                            <p class="all__item-desc">ул. Западный обход</p>
+        
+                                            <p class="all__item-price">от 1 230 000 ₽</p>
+        
+                                        </div>
+        
+                                    </a>
+        
+                                    <a href="#" class="all__item">
+        
+                                        <img class="all__item-img" src="img/main-all/main-all-item3.png" alt="">
+        
+                                        <p class="all__item-badge">хит продаж</p>
+        
+                                        <div class="all__item-bottom">
+        
+                                            <p class="all__item-title">новелла</p>
+        
+                                            <p class="all__item-desc">ул. Питерская, д. 40, литера 4</p>
+        
+                                            <p class="all__item-price">от 1 230 000 ₽</p>
+        
+                                        </div>
+        
+                                    </a>
+        
+                                    <a href="#" class="all__item">
+        
+                                        <img class="all__item-img" src="img/main-all/main-all-item4.png" alt="">
+        
+                                        <p class="all__item-badge">хит продаж</p>
+        
+                                        <div class="all__item-bottom">
+        
+                                            <p class="all__item-title">светлоград</p>
+        
+                                            <p class="all__item-desc">ул. Красных Партизан, 1/3к1</p>
+        
+                                            <p class="all__item-price">от 1 230 000 ₽</p>
+        
+                                        </div>
+        
+                                    </a>
+        
+                                    <a href="#" class="all__item">
+        
+                                        <img class="all__item-img" src="img/main-all/main-all-item5.png" alt="">
+        
+                                        <p class="all__item-badge">хит продаж</p>
+        
+                                        <div class="all__item-bottom">
+        
+                                            <p class="all__item-title">грани</p>
+        
+                                            <p class="all__item-desc">ул. Западный обход, д. 45, литера 5.</p>
+        
+                                            <p class="all__item-price">от 1 230 000 ₽</p>
+        
+                                        </div>
+        
+                                    </a>
+        
+                                    <a href="#" class="all__item">
+        
+                                        <img class="all__item-img" src="img/main-all/main-all-item6.png" alt="">
+        
+                                        <p class="all__item-badge">хит продаж</p>
+        
+                                        <div class="all__item-bottom">
+        
+                                            <p class="all__item-title">дарстрой</p>
+        
+                                            <p class="all__item-desc">ул. Красных Партизан, д. 117</p>
+        
+                                            <p class="all__item-price">от 1 230 000 ₽</p>
+        
+                                        </div>
+        
+                                    </a>
+
+                                </div>     
+
+                                <div class="btn btn--long" data-name="accordeon-title">Ещё ЖК</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="selection">
+
+                <div class="container">
+
+                    <div class="selection__content">
+
+                        <h2 class="title selection__title">Форма подбора квартиры</h2>
+
+                        <form action="" class="selection__form">
+
+                            <div class="selection-form__row">
+
+                                <div class="selected-form__list selected-form__list-room">
+
+                                    <div class="selected-form__list-current room__current">
+
+                                        <span id="m1934" class="selected-form__list-current-elem room-current__elem">Количество комнат</span>
+
+                                        <div class="selected-form__list-btn-wrap room-btn">
+
+                                            <img src="img/main-selection/main-selection-arrow.png" alt="" class="selected-form__list-btn ">
+
+                                        </div>
+
+                                        <img src="img/main-selection/main-selection-img1.png" alt="" class="selected-form__list-icon">
+
+                                    </div>
+
+                                    <ul class="selected-form__list-elem-wrap room__list">
+                                     
+                                        <li id="m1934" class="selected-form__list-elem room__elem">1</li>
+                                     
+                                        <li id="m1935" class="selected-form__list-elem room__elem">2</li>
+                                     
+                                        <li id="m1936" class="selected-form__list-elem room__elem">3</li>
+                                     
+                                        <li id="m1937" class="selected-form__list-elem room__elem">4</li>
+                                        
+                                    </ul>
+
+                                </div>
+
+                                <div class="selected-form__list selected-form__list-area">
+
+                                    <div class="selected-form__list-current area__current">
+
+                                        <span id="m1934" class="selected-form__list-current-elem area-current__elem">Район</span>
+
+                                        <div class="selected-form__list-btn-wrap area-btn">
+
+                                            <img src="img/main-selection/main-selection-arrow.png" alt="" class="selected-form__list-btn">
+
+                                        </div>
+
+                                        <img src="img/main-selection/main-selection-img4.png" alt="" class="selected-form__list-icon">
+
+                                    </div>
+
+                                    <ul class="selected-form__list-elem-wrap area__list">
+                                     
+                                        <li id="m1934" class="selected-form__list-elem area__elem">Район1</li>
+                                     
+                                        <li id="m1935" class="selected-form__list-elem area__elem">Район2</li>
+                                     
+                                        <li id="m1936" class="selected-form__list-elem area__elem">Район3</li>
+                                     
+                                        <li id="m1937" class="selected-form__list-elem area__elem">Район4</li>
+                                        
+                                    </ul>
+
+                                </div>
+
+                                <div class="selected-form__list selected-form__list-contribution">
+
+                                    <div class="selected-form__list-current contribution__current">
+
+                                        <span id="m1934" class="selected-form__list-current-elem contribution-current__elem">Стадия строительства</span>
+
+                                        <div class="selected-form__list-btn-wrap contribution-btn">
+
+                                            <img src="img/main-selection/main-selection-arrow.png" alt="" class="selected-form__list-btn">
+
+                                        </div>
+
+                                        <img src="img/main-selection/main-selection-img7.png" alt="" class="selected-form__list-icon">
+
+                                    </div>
+
+                                    <ul class="selected-form__list-elem-wrap contribution__list">
+                                     
+                                        <li id="m1934" class="selected-form__list-elem contribution__elem">Стадия строительства1</li>
+                                     
+                                        <li id="m1935" class="selected-form__list-elem contribution__elem">Стадия строительства2</li>
+                                     
+                                        <li id="m1936" class="selected-form__list-elem contribution__elem">Стадия строительства3</li>
+                                     
+                                        <li id="m1937" class="selected-form__list-elem contribution__elem">Стадия строительства4</li>
+                                        
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="selection-form__row">
+
+                                <input class="selection-form__input selection-form__input1" type="number" placeholder="Желаемая цена квартиры">
+
+                                <div class="selected-form__list selected-form__list-payment">
+
+                                    <div class="selected-form__list-current payment__current">
+
+                                        <span id="m1934" class="selected-form__list-current-elem payment-current__elem">Способ оплаты</span>
+
+                                        <div class="selected-form__list-btn-wrap payment-btn">
+
+                                            <img src="img/main-selection/main-selection-arrow.png" alt="" class="selected-form__list-btn">
+
+                                        </div>
+
+                                        <img src="img/main-selection/main-selection-img5.png" alt="" class="selected-form__list-icon">
+
+                                    </div>
+
+                                    <ul class="selected-form__list-elem-wrap payment__list">
+                                     
+                                        <li id="m1934" class="selected-form__list-elem payment__elem">Способ оплаты1</li>
+                                     
+                                        <li id="m1935" class="selected-form__list-elem payment__elem">Способ оплаты2</li>
+                                     
+                                        <li id="m1936" class="selected-form__list-elem payment__elem">Способ оплаты3</li>
+                                     
+                                        <li id="m1937" class="selected-form__list-elem payment__elem">Способ оплаты4</li>
+                                        
+                                    </ul>
+
+                                </div>
+
+                                <div class="selected-form__list selected-form__list-stage">
+
+                                    <div class="selected-form__list-current stage__current">
+
+                                        <span id="m1934" class="selected-form__list-current-elem stage-current__elem">Первый взнос</span>
+
+                                        <div class="selected-form__list-btn-wrap stage-btn">
+
+                                            <img src="img/main-selection/main-selection-arrow.png" alt="" class="selected-form__list-btn">
+
+                                        </div>
+                                        
+                                        <img src="img/main-selection/main-selection-img8.png" alt="" class="selected-form__list-icon">
+
+                                    </div>
+
+                                    <ul class="selected-form__list-elem-wrap stage__list">
+                                     
+                                        <li id="m1934" class="selected-form__list-elem stage__elem">Первый взнос1</li>
+                                     
+                                        <li id="m1935" class="selected-form__list-elem stage__elem">Первый взнос2</li>
+                                     
+                                        <li id="m1936" class="selected-form__list-elem stage__elem">Первый взнос3</li>
+                                     
+                                        <li id="m1937" class="selected-form__list-elem stage__elem">Первый взнос4</li>
+                                        
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="selection-form__row">
+
+                                <input class="selection-form__input selection-form__input2" type="text" placeholder="Ваше имя">
+
+                                <div class="selection-form__input-wrap">
+
+                                    <span>*</span>
+
+                                    <input class="selection-form__input selection-form__input3" type="number" placeholder="Номер телефона">
+
+                                </div>
+
+                                <div class="btn btn--form btn__main-selection">Подобрать</div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="comfortable">
+
+                <div class="container">
+
+                    <div class="comfortable__content">
+
+                        <h2 class="title comfortable__title">С нами удобно</h2>
+
+                        <h3 class="comfortable__subtitle">Почему выгодно работать с нами:</h3>
+
+                        <div class="comfortables__items-wrap">
+
+                            <div class="comfortable__item">
+
+                                <img src="img/comfortable/comfortable-item-img1.png" alt="">
+
+                                <p class="comfortable__item-desc">Продадим вашу <br> квартиру</p>
+
+                            </div>
+
+                            <div class="comfortable__item">
+
+                                <img src="img/comfortable/comfortable-item-img2.png" alt="">
+
+                                <p class="comfortable__item-desc">Подберем район</p>
+
+                            </div>
+
+                            <div class="comfortable__item">
+
+                                <img src="img/comfortable/comfortable-item-img3.png" alt="">
+
+                                <p class="comfortable__item-desc">Проведём экскурсию <br> по новостройкам</p>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="reviews">
+
+                <div class="reviews__content">
+
+                    <h2 class="title reviews__title">Отзывы наших клиентов</h2>
+
+                    <div id="gallery" class="reviews__items-wrap owl-carousel owl-theme">
+
+                        <div class="reviews__item" >
+
+                            <a data-fancybox="gallery" href="video/reviews-video.mp4">
+                                <img src="video/reviews-preview.png" />
+                            </a>
+
+                        </div>  
+
+                        <div class="reviews__item" >
+
+                            <a data-fancybox="gallery" href="video/reviews-video.mp4">
+                                <img src="video/reviews-preview.png" />
+                            </a>
+
+                        </div>
+
+                        <div class="reviews__item" >
+                    
+                            <a data-fancybox="gallery" href="video/reviews-video.mp4">
+                                <img src="video/reviews-preview.png">
+                            </a>
+
+                        </div>
+
+                        <div class="reviews__item" >
+
+                            <a data-fancybox="gallery" href="video/reviews-video.mp4">
+                                <img src="video/reviews-preview.png" />
+                            </a>
+
+                        </div>
+                        
+                    </div>
+                    
+                    <a href="#" class="btn btn--reviews">Смотреть все</a>
+
+                </div>
+
+            </div>
+
+            <div class="call">
+
+                <div class="container">
+
+                    <div class="call__content">
+
+                        <h2 class="title call__title">Остались вопросы?</h2>
+
+                        <h3 class="call__undertitle">Задай их нашему менеджеру</h3>
+
+                        <form action="" class="call__form">
+
+                            <div class="call__form-top">
+
+                                <input class="call__form-input-name" type="text" placeholder="Ваше имя">
+
+                                <div class="call__form-input-wrap">
+
+                                    <span>*</span>
+
+                                    <input class="call__form-input-number" type="number" placeholder="Номер телефона">
+
+                                </div>
+
+                                <div class="btn btn--form btn__main-call">Подобрать</div>
+
+                            </div>
+
+                            <div class="checkbox">
+    
+                                <label>
+
+                                    <input type="checkbox" name="privacy-policy" class="real-checkbox">
+
+                                    <span class="custom-checkbox"></span>
+
+                                    <p class="checkbox__text">Я согласен на обработку персональных данных</p>
+
+                                </label>
+
+                            </div>
+
+                            <div class="btn btn--form btn--form--mobile btn__main-call">Подобрать</div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal__wrap modal__form-wrap">
+
+                <div class="modal__bg modal__form-bg">
+
+                    <img class="modal__close-btn modal__form-close-btn" src="img/modal/modal-close-btn.png" alt="">
+
+                    <p class="modal__title modal__form-title">Хотите узнать больше или забронировать квартиру?</p>
+
+                    <p class="modal__undertitle modal__form-undertitle">Оставьте ваш номер телефона и наши менеджеры вам перезвонят</p>
+
+                    <form action="" class="modal__form">
+
+                        <input type="text" class="modal__form-input-name" placeholder="Ваше имя" required>
+
+                        <div class="modal__from-input-wrap">
+
+                            <span>*</span>
+
+                            <input type="number" class="modal__form-input-number" placeholder="Номер телефона" required>
+
+                        </div>
+
+                        <div class="checkbox">
+
+                            <label>
+
+                                <input type="checkbox" name="privacy-policy" class="real-checkbox">
+
+                                <span class="custom-checkbox"></span>
+
+                                <p class="checkbox__text checkbox__text--modal">Я согласен на обработку персональных данных</p>
+
+                            </label>
+
+                        </div>
+
+                        <div class="btn btn--modal">Жду звонка</div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="modal__wrap modal__thanks-wrap">
+
+                <div class="modal__bg modal__thanks-bg">
+
+                    <img class="modal__close-btn modal__thanks-close-btn" src="img/modal/modal-close-btn.png" alt="">
+
+                    <p class="modal__title modal__thanks-title">Спасибо, ваша заявка принята!</p>
+
+                    <p class="modal__undertitle modal__thanks-undertitle">Мы свяжемся с вами в ближайшее время.</p>
+
+                    <img class="modal__img modal__thanks-img" src="img/modal/modal-thanks-img.png" alt="">
+                    
+                    <div class="btn btn--modal">Ок, спасибо</div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="footer">
+
+            <div class="container">
+
+                <div class="footer__content">
+
+                    <div class="footer__left">
+
+                        <a href="main.html" class="footer__logo">
+
+                            <img src="img/base/logo.png" alt="">
+
+                        </a>
+
+                        <ul class="footer-nav__list">
+
+                            <li class="footer-list__item">
+
+                                <a href="#">все ЖК</a>
+
+                            </li>
+
+                            <li class="footer-list__item">
+
+                                <a href="#">Районы</a>
+
+                            </li>
+
+                            <li class="footer-list__item">
+
+                                <a href="#">О компании</a>
+
+                            </li>
+
+                            <li class="footer-list__item">
+
+                                <a href="#">Контакты</a>
+
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="footer__right">
+
+                        <img src="img/base/phone-icon.svg" alt="">
+
+                        <a href="tel:8 800 00 00 000">8 800 00 00 000</a>
+
+                    </div>
+
+                    <img src="img/header/mobile-nav-open-btn.svg" alt="" class="mobile-nav__open-btn mobile-nav__open-btn-footer">
+
+                    <div class="mobile__nav-wrap ">
+
+                        <div class="mobile__nav">
+
+                            <img src="img/header/mobile-nav-close-btn.svg" alt="" class="mobile-nav__close-btn">
+
+                            <p class="mobile__nav-title">Навигация по сайту</p>
+
+                            <ul class="footer-nav__list mobile__nav-list">
+
+                                <li class="footer-list__item">
+
+                                    <a href="#">все ЖК</a>
+    
+                                </li>
+    
+                                <li class="footer-list__item">
+    
+                                    <a href="#">Районы</a>
+    
+                                </li>
+    
+                                <li class="footer-list__item">
+    
+                                    <a href="#">О компании</a>
+    
+                                </li>
+    
+                                <li class="footer-list__item">
+    
+                                    <a href="#">Контакты</a>
+    
+                                </li>
+
+                            </ul>
+
+                            <div class="footer__right mobile-nav__tel">
+
+                                <img src="img/base/phone-icon.svg" alt="">
+        
+                                <a href="tel:88000000000">8 800 00 00 000</a>
+        
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="libs/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

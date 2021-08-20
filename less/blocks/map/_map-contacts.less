@@ -1,0 +1,117 @@
+.map__contacts {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url('../img/map/map-before.png');
+        background-repeat: no-repeat;
+        backdrop-filter: blur(8px);
+        width: 172px;
+        height: 214px;
+        left: 0;
+        bottom: -104px;
+        z-index: 2;
+
+        @media (max-width: 1500px) {
+            content: none;
+        }
+    }
+
+    @media (max-width: 550px) {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+}
+
+.map__contacts-content {
+    position: relative;
+    z-index: 3;
+}
+
+.map__contacts-title {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.map__contacts-items-wrap {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+
+    @media (max-width: 1200px) {
+        justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.map__contacts-item {
+    margin-right: 70px;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 1200px) {
+        width: 33%;
+        margin-right: 0;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+.contacts-item__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 120%;
+    color: #252525;   
+    
+    @media (max-width: 550px) {
+        font-size: 18px;
+        line-height: 120%;        
+    }
+}
+
+.contacts-item__adress {
+    display: flex;
+    margin-bottom: 10px;
+
+    img {
+        margin-right: 10px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+        color: #252525;
+    }
+}
+
+.contacts-item__tel {
+    display: flex;
+    text-decoration: none;
+
+    img {
+        margin-right: 10px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+        color: #252525;
+    }
+}

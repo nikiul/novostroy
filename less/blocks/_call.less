@@ -1,0 +1,248 @@
+.call {
+    padding: 40px 0;
+    background: hsla(200, 98%, 33%, 0.05);
+
+    @media (max-width: 768px) {
+        padding: 30px 0;
+    }
+}
+
+.call-complex {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -218px;
+        background-image: url(../img/call/call-before.png);
+        background-repeat: no-repeat;
+        width: 176px;
+        height: 433px;
+        z-index: 2;
+
+        @media (max-width: 1560px) {
+            content: none;
+        }
+    }
+}
+
+.call__content {
+    position: relative;
+    z-index: 2;
+}
+
+.call__title {
+    margin-bottom: 10px;
+}
+
+.complex-call__title {
+    margin-bottom: 30px;
+}
+
+.call__undertitle {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #252525;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    @media (max-width: 650px) {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.call__form-top {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .btn--form {
+        width: 34%;
+    }
+
+    @media (max-width: 850px) {
+        justify-content: center;
+    }
+
+    @media (max-width: 550px) {
+        flex-direction: column;
+    }
+}
+
+.call__form-input-name {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 60px;
+    font-family: 'AvenirNextCyr', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #252525;
+    width: 32%;
+    background: #FFFFFF;
+    border: 1px solid #58BE6A;
+    border-radius: 16px;
+    outline: none;
+    background-image: url('../img/call/call-name-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 25px;
+
+    @media (max-width: 850px) {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 48%;
+    }
+
+    @media (max-width: 550px) {
+        width: 100%;
+        font-size: 18px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 50px;
+        background-size: 20px 20px;
+        background-position: 20px;
+    }
+}
+
+.call__form-input-wrap {
+    position: relative;
+    width: 32%;
+
+    span {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: #FF6464;
+        z-index: 2;
+
+        @media (max-width: 550px) {
+            top: 15px;
+        }
+    }
+
+    @media (max-width: 850px) {
+        width: 48%;
+        margin-bottom: 20px;
+
+    }
+
+    @media (max-width: 550px) {
+        width: 100%;
+    }
+}   
+
+.call__form-input-number {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 60px;
+    font-family: 'AvenirNextCyr', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #252525;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #58BE6A;
+    border-radius: 16px;
+    outline: none;
+    background-image: url('../img/call/call-number-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 25px;
+
+    @media (max-width: 850px) {
+    }
+
+    @media (max-width: 550px) {
+        font-size: 18px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 50px;
+        background-size: 20px 20px;
+        background-position: 20px;
+    }
+}
+
+.btn--form--mobile {
+    display: none;
+
+    @media (max-width: 550px) {
+        display: block;
+    }
+}
+
+.checkbox {
+    
+    label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    @media (max-width: 550px) {
+        margin-bottom: 20px;
+    }
+}
+
+.checkbox__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #252525;
+}
+
+.checkbox__text--modal {
+    color: #FFFFFF;    
+}
+
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+
+    &:checked + .custom-checkbox::before {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.custom-checkbox {
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #58BE6A;
+    border-radius: 9px;
+    vertical-align: middle;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 16px;
+        height: 8px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background-image: url('../img/call/call-checkbox-icon.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition:  0.2s ease-in;
+    }
+}
