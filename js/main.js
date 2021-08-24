@@ -4,27 +4,52 @@ var openNavBtnFooter = document.querySelector(".mobile-nav__open-btn-footer");
 var closeNavBtn = document.querySelector(".mobile-nav__close-btn");
 var mobileNavWrap = document.querySelector(".mobile__nav-wrap");
 var mobileNav = document.querySelector(".mobile__nav");
+var bodyLock = document.querySelector('body');
 
 if(openNavBtnHeader) {
     openNavBtnHeader.addEventListener("click", function(){
-        mobileNavWrap.classList.add('mobile__nav-wrap--active');
-        mobileNav.classList.add('mobile__nav--active');
+        mobileNavWrap.classList.add('mobile__nav-wrap-header--active');
+        mobileNav.classList.add('mobile__nav-header--active');
+        bodyLock.classList.add('body__lock');
     })
 }
 
 if(openNavBtnFooter) {
     openNavBtnFooter.addEventListener("click", function(){
-        mobileNavWrap.classList.add('mobile__nav-wrap--active');
-        mobileNav.classList.add('mobile__nav--active');
+        mobileNavWrap.classList.add('mobile__nav-wrap-footer--active');
+        mobileNav.classList.add('mobile__nav-footer--active');
+        bodyLock.classList.add('body__lock');
     })
 }
 
 if(closeNavBtn) {
     closeNavBtn.addEventListener("click", function(){
-        mobileNavWrap.classList.remove('mobile__nav-wrap--active');
-        mobileNav.classList.remove('mobile__nav--active');
+        mobileNavWrap.classList.remove('mobile__nav-wrap-header--active');
+        mobileNavWrap.classList.remove('mobile__nav-wrap-footer--active');
+        mobileNav.classList.remove('mobile__nav-header--active');
+        mobileNav.classList.remove('mobile__nav-footer--active');
+        bodyLock.classList.remove('body__lock');
     })
 }
+
+// скрываем мобильную навигацию при клике на ссылки
+const listItem = document.querySelectorAll('.header-list__item');
+if(listItem) {
+    for (let list of listItem) {
+        const itemLink = list.querySelector('.header-list__item-link');
+
+        if(itemLink) {
+            itemLink.addEventListener('click', function(){
+                mobileNavWrap.classList.remove('mobile__nav-wrap-header--active');
+                mobileNavWrap.classList.remove('mobile__nav-wrap-footer--active');
+                mobileNav.classList.remove('mobile__nav-header--active');
+                mobileNav.classList.remove('mobile__nav-footer--active');
+                bodyLock.classList.remove('body__lock');
+            })
+        }
+            
+    }
+};
 
 // Отрытие баннера c формой при нажатии в блоке hero
 var btnPopupFormHero = document.querySelector(".btn__main-hero");
@@ -525,4 +550,34 @@ $('input[type=range]').on('input', function(e){
       'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
     });
 }).trigger('input');
+// 
+
+
+//  приипающая и уезжающая шапка 
+(function($) { 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){
+            $('header').addClass("sticky");
+        }
+        else{
+            $('header').removeClass("sticky");
+        }
+    });
+})( jQuery );
+
+(function($) { 
+    var header = $('.header'),
+        scrollPrev = 0;
+
+    $(window).scroll(function() {
+        var scrolled = $(window).scrollTop();
+    
+        if ( scrolled > 500 && scrolled > scrollPrev ) {
+            header.addClass('out');
+        } else {
+            header.removeClass('out');
+        }
+        scrollPrev = scrolled;
+    });
+})( jQuery );
 // 

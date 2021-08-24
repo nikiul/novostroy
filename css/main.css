@@ -45,6 +45,10 @@ body {
   font-style: normal;
   font-weight: 700;
 }
+.body__lock {
+  height: 100%;
+  overflow: hidden;
+}
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -340,9 +344,28 @@ input::-moz-placeholder {
   }
 }
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+  background: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.header.sticky {
+  top: 0;
+  background: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-box-shadow: 0 12px 65px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 12px 65px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+}
+.header.out {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 .header--shadow {
   -webkit-box-shadow: 0px 2px 14px 13px rgba(31, 116, 154, 0.2);
@@ -395,32 +418,32 @@ input::-moz-placeholder {
     display: none;
   }
 }
-.header-list__item {
+.mobile-nav-list__item {
   margin-right: 50px;
 }
-.header-list__item:last-child {
+.mobile-nav-list__item:last-child {
   margin-right: 0;
 }
-.header-list__item a {
+@media (max-width: 1020px) {
+  .mobile-nav-list__item {
+    margin-right: 25px;
+  }
+}
+@media (max-width: 850px) {
+  .mobile-nav-list__item {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+.mobile-nav-list__item-link {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: #0270A6;
   text-decoration: none;
 }
-.header-list__item a:hover {
+.mobile-nav-list__item-link:hover {
   text-decoration: underline;
-}
-@media (max-width: 1020px) {
-  .header-list__item {
-    margin-right: 25px;
-  }
-}
-@media (max-width: 850px) {
-  .header-list__item {
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
 }
 .header__right {
   display: -webkit-box;
@@ -481,9 +504,9 @@ input::-moz-placeholder {
           backdrop-filter: blur(10px);
   -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-  z-index: 10;
+  z-index: 1000;
 }
-.mobile__nav-wrap--active {
+.mobile__nav-wrap-header--active {
   opacity: 1;
   visibility: visible;
 }
@@ -507,7 +530,7 @@ input::-moz-placeholder {
     width: 323px;
   }
 }
-.mobile__nav--active {
+.mobile__nav-header--active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -681,6 +704,14 @@ input::-moz-placeholder {
   position: absolute;
   right: 10px;
   top: 50%;
+}
+.mobile__nav-wrap-footer--active {
+  opacity: 1;
+  visibility: visible;
+}
+.mobile__nav-footer--active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .hot {
   position: relative;
@@ -1742,7 +1773,7 @@ input::-moz-placeholder {
 }
 .main__hero {
   position: relative;
-  padding-top: 90px;
+  padding-top: 165px;
   padding-bottom: 20px;
   background-image: url('../img/main-hero/main-hero-bg.png');
   background-repeat: no-repeat;
@@ -1754,12 +1785,13 @@ input::-moz-placeholder {
 }
 @media (max-width: 630px) {
   .main__hero {
-    padding-top: 30px;
+    padding-top: 113px;
     padding-bottom: 30px;
   }
 }
 @media (max-width: 450px) {
   .main__hero {
+    padding-top: 80px;
     background-image: url('../img/main-hero/main-hero-bg-mobile.png');
     background-size: contain;
   }
@@ -2458,7 +2490,7 @@ input::-moz-placeholder {
 }
 .complex__hero {
   position: relative;
-  padding-top: 117px;
+  padding-top: 160px;
   padding-bottom: 128px;
   background-image: url('../img/complex-hero/complex-hero-bg.png');
   background-size: cover;
@@ -2475,7 +2507,7 @@ input::-moz-placeholder {
 }
 @media (max-width: 500px) {
   .complex__hero {
-    padding-top: 62px;
+    padding-top: 100px;
     padding-bottom: 65px;
   }
 }
@@ -4071,7 +4103,7 @@ input[type=range]::-moz-range-thumb {
 }
 .about__hero {
   position: relative;
-  padding-top: 260px;
+  padding-top: 300px;
   padding-bottom: 260px;
   background-image: url('../img/about-hero/about-hero-bg.png');
   background-size: cover;
@@ -4601,7 +4633,7 @@ input[type=range]::-moz-range-thumb {
 }
 .map__contacts {
   position: relative;
-  padding-top: 20px;
+  padding-top: 100px;
   padding-bottom: 40px;
 }
 .map__contacts::before {
@@ -4624,7 +4656,6 @@ input[type=range]::-moz-range-thumb {
 }
 @media (max-width: 550px) {
   .map__contacts {
-    padding-top: 10px;
     padding-bottom: 30px;
   }
 }
